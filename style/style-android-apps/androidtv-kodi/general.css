@@ -1,0 +1,48 @@
+@font-face {
+  font-family: product-bold;
+  src: url(font/product-sans/ProductSans-Bold.woff2)
+}
+@font-face {
+  font-family: product-medium;
+  src: url(font/product-sans/ProductSans-Medium.woff2)
+}
+@font-face {
+  font-family: product-regular;
+  src: url(font/product-sans/ProductSans-Regular.woff2)
+}
+
+@font-face {
+  font-family: creato-regular;
+  src: url(font/creato/CreatoDisplay-Regular.otf)
+}
+@font-face {
+  font-family: creato-medium;
+  src: url(font/creato/CreatoDisplay-Medium.otf)
+}
+@font-face {
+  font-family: creato-bold;
+  src: url(font/creato/CreatoDisplay-Bold.otf)
+}
+@font-face {
+  font-family: creato-extrabold;
+  src: url(font/creato/CreatoDisplay-ExtraBold.otf)
+}
+
+body {
+  background-color: #060606;
+  color: #f5f5f5;
+  margin: 0;
+  font-family: product-regular, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 119, 255);
+}

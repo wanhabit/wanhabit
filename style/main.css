@@ -1,0 +1,137 @@
+@font-face {
+  font-family: Anton;
+  src: url(font/Anton-Regular.ttf);
+}
+
+@font-face {
+  font-family: product-bold;
+  src: url(font/product-sans/ProductSans-Bold.ttf);
+}
+@font-face {
+  font-family: product-medium;
+  src: url(font/product-sans/ProductSans-Medium.ttf);
+}
+@font-face {
+  font-family: product-black;
+  src: url(font/product-sans/ProductSans-Black.ttf);
+}
+
+@font-face {
+  font-family: apple-bold;
+  src: url(font/apple/SFNSDisplay-Bold.otf);
+}
+@font-face {
+  font-family: apple-semibold;
+  src: url(font/apple/SFNSDisplay-Semibold.otf);
+}
+@font-face {
+  font-family: apple-medium;
+  src: url(font/apple/SFNSDisplay-Medium.otf);
+}
+
+.logo-wanhabit {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.line {
+  background-color: #f5f5f5;
+  height: 5pt;
+}
+
+.logo-contain {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.title-header {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nameTitle {
+  font-size: 40px;
+  font-family: Anton;
+}
+
+.text-bold {
+  font-family: product-bold;
+}
+
+.linkContainer {
+  width: auto;
+  max-width: 620px;
+  margin: 25px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  background-color: #f5f5f5;
+  text-decoration: none;
+  margin-bottom: 35px;
+  padding: 12px;
+  border: solid #f5f5f5 1px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: apple-bold;
+  color: #101010;
+  position: relative;
+  transition: border-radius 0.15s,
+    background-color 0.15s,
+    filter 0.15s,
+    box-shadow 0.15s,
+    border-color 0.15s;
+}
+
+.link:hover {
+  border-radius: 28px;
+  background-color: rgba(195, 195, 195, 0.585);
+  filter: invert(100%);
+  border-color: #141414;
+  box-shadow: 0px 1px 80px -2px rgba(0,0,0,0.45);
+-webkit-box-shadow: 0px 1px 80px -2px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 1px 80px -2px rgba(0,0,0,0.45);
+}
+
+.link img {
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  bottom: 9px;
+  filter: brightness(50%)
+}
+
+.telegram-contain {
+  text-align: center;
+  padding-top: 33px;
+}
+
+.telegram-contain img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 7px;
+}
+
+.c-wan {
+  font-family: apple-medium;
+  font-size: 13px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.line-footer {
+  background-color: #f5f5f5;
+  height: 5pt;
+  box-shadow: -1px -179px 400px 60px rgba(255,255,255,0.73);
+  -webkit-box-shadow: -1px -179px 400px 60px rgba(255,255,255,0.73);
+  -moz-box-shadow: -1px -179px 400px 60px rgba(255,255,255,0.73);
+}

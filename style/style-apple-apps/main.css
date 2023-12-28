@@ -1,0 +1,201 @@
+@font-face {
+  font-family: Anton;
+  src: url(font/Anton-Regular.ttf);
+}
+
+@font-face {
+  font-family: product-bold;
+  src: url(font/product-sans/ProductSans-Bold.ttf);
+}
+@font-face {
+  font-family: product-medium;
+  src: url(font/product-sans/ProductSans-Medium.ttf);
+}
+@font-face {
+  font-family: product-black;
+  src: url(font/product-sans/ProductSans-Black.ttf);
+}
+
+@font-face {
+  font-family: apple-bold;
+  src: url(font/apple/SFNSDisplay-Bold.otf);
+}
+@font-face {
+  font-family: apple-semibold;
+  src: url(font/apple/SFNSDisplay-Semibold.otf);
+}
+@font-face {
+  font-family: apple-medium;
+  src: url(font/apple/SFNSDisplay-Medium.otf);
+}
+
+.logo {
+  height: 120px;
+  filter: invert(100%);
+}
+
+.line {
+  background-color: #f5f5f5;
+  height: 5pt;
+}
+
+.logo-contain {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.title-header {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nameTitle {
+  font-size: 42px;
+  font-family: Anton;
+}
+
+.nameTitle2 {
+  text-align: center;
+  font-size: 38px;
+  font-family: Anton;
+  padding-top: 10px;
+}
+
+@media (max-width: 523px) {
+  .nameTitle {
+    font-size: 35px;
+    font-family: Anton;
+  }
+}
+
+.text-bold {
+  font-family: product-bold;
+}
+.text-bold2 {
+  font-family: apple-bold;
+}
+
+.suggest-title {
+  margin-top: 30px;
+}
+
+.linkContainer {
+  width: auto;
+  max-width: 620px;
+  margin: 25px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  background-color: #f5f5f5;
+  text-decoration: none;
+  margin-bottom: 40px;
+  padding: 6px;
+  border: solid #f5f5f5 1px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: apple-bold;
+  color: #101010;
+  position: relative;
+  transition: border-radius 0.15s,
+    background-color 0.15s,
+    filter 0.15s,
+    box-shadow 0.15s,
+    border-color 0.15s;
+}
+
+.link:hover {
+  border-radius: 38px;
+  background-color: rgba(195, 195, 195, 0.585);
+  filter: invert(100%);
+  border-color: #141414;
+  box-shadow: 0px 1px 80px -2px rgba(0,0,0,0.45);
+-webkit-box-shadow: 0px 1px 80px -2px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 1px 80px -2px rgba(0,0,0,0.45);
+}
+
+.link img {
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  padding-left: 8px;
+}
+
+.subtitle-name-apps {
+  font-family: apple-medium;
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+
+.telegram-contain {
+  text-align: center;
+  padding-top: 33px;
+}
+
+.c-wan {
+  font-family: apple-medium;
+  font-size: 13px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.line-footer {
+  background-color: #f5f5f5;
+  height: 5pt;
+  box-shadow: -1px -179px 400px 60px rgba(255,255,255,0.73);
+  -webkit-box-shadow: -1px -179px 400px 60px rgba(255,255,255,0.73);
+  -moz-box-shadow: -1px -179px 400px 60px rgba(255,255,255,0.73);
+}
+
+.contain-back {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 10px;
+}
+
+.back-button {
+  background-color: #f5f5f5;
+  color: #101010;
+  font-size: 25px;
+  padding: 9px 40px;
+  font-family: apple-bold;
+  border-radius: 5px;
+}
+
+.suggest-title2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.line-middle {
+  display: inline-block;
+  height: 2px;
+  background-color: #f5f5f5;
+  width: 50%;
+}
+
+.line-container {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.suggest-title3 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.suggest-title4 {
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+}
+
