@@ -82,7 +82,7 @@
 .shine:before {
   content: '';
   position: absolute;
-  width: 100px;
+  width: 200px;
   height: 100%;
   background-image: linear-gradient(
     120deg,
@@ -92,7 +92,7 @@
   );
   top: 0;
   left: -100px;
-  animation: shine 3s infinite linear;
+  animation: shine 4s infinite linear;
 }
 
 @keyframes shine {
