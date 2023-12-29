@@ -140,7 +140,7 @@
   -moz-box-shadow: -1px -179px 400px 60px rgba(255,255,255,0.73);
 }
 
-@media (max-width: 415px) {
+@media (min-width:351px) and (max-width: 415px) {
   .link {
     font-size: 18px;
     margin-bottom: 20px;
@@ -154,6 +154,48 @@
     bottom: 8px;
     width: 28px;
     height: 28px;
+  }
+
+  .c-wan {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 306px) and (max-width: 350px) {
+  .link {
+    font-size: 17px;
+    margin-bottom: 17px;
+  }
+
+  .suggest {
+    font-size: 13px;
+  }
+
+  .link img {
+    bottom: 8px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .c-wan {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 305px) {
+  .link {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
+  .suggest {
+    font-size: 10px;
+  }
+
+  .link img {
+    bottom: 9px;
+    width: 22px;
+    height: 22px;
   }
 
   .c-wan {
