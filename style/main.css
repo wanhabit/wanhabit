@@ -79,7 +79,7 @@
   overflow: hidden;
 }
 
-.shine:before{
+.shine:before {
   content: '';
   position: absolute;
   width: 100px;
