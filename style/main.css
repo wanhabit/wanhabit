@@ -28,6 +28,10 @@
   font-family: apple-medium;
   src: url(font/apple/SFNSDisplay-Medium.otf);
 }
+@font-face {
+  font-family: apple-regular;
+  src: url(font/apple/SFNSDisplay-Regular.otf);
+}
 
 .logo-wanhabit {
   width: 120px;
@@ -122,7 +126,7 @@
 }
 
 .c-wan {
-  font-family: apple-medium;
+  font-family: apple-regular;
   font-size: 13px;
   padding-top: 50px;
   padding-bottom: 15px;
@@ -134,4 +138,23 @@
   box-shadow: -1px -179px 400px 60px rgba(255,255,255,0.73);
   -webkit-box-shadow: -1px -179px 400px 60px rgba(255,255,255,0.73);
   -moz-box-shadow: -1px -179px 400px 60px rgba(255,255,255,0.73);
+}
+
+@media (max-width: 390px) {
+  .link {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .suggest {
+    font-size: 15px;
+  }
+
+  .link img {
+    bottom: 5px;
+  }
+
+  .c-wan {
+    font-size: 9px;
+  }
 }
