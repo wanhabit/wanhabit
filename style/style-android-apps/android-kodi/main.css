@@ -28,6 +28,10 @@
   font-family: apple-medium;
   src: url(font/apple/SFNSDisplay-Medium.otf);
 }
+@font-face {
+  font-family: apple-regular;
+  src: url(font/apple/SFNSDisplay-Regular.otf);
+}
 
 .logo {
   height: 120px;
@@ -188,4 +192,47 @@
   padding: 9px 40px;
   font-family: apple-bold;
   border-radius: 5px;
+}
+
+@media (max-width: 465px) {
+  .suggest-media {
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+
+  .copy-button {
+    font-size: 18px;
+    width: 90px;
+  }
+
+  #copyButton.clicked {
+    width: 120px;
+  }
+
+  .linkContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .link img {
+    width: 30px;
+    height: 30px;
+    bottom: 8;
+  }
+
+  .suggest-media2 {
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .c-wan {
+    font-family: apple-regular;
+    font-size: 9px;
+  }
 }

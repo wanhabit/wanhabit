@@ -28,6 +28,10 @@
   font-family: apple-medium;
   src: url(font/apple/SFNSDisplay-Medium.otf);
 }
+@font-face {
+  font-family: apple-regular;
+  src: url(font/apple/SFNSDisplay-Regular.otf);
+}
 
 .logo {
   height: 120px;
@@ -123,4 +127,15 @@
   padding: 9px 40px;
   font-family: apple-bold;
   border-radius: 5px;
+}
+
+@media (max-width: 465px) {
+  .suggest-media {
+    font-size: 15px;
+  }
+
+  .c-wan {
+    font-family: apple-regular;
+    font-size: 9px;
+  }
 }
