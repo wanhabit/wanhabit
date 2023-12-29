@@ -140,10 +140,11 @@
   -moz-box-shadow: -1px -179px 400px 60px rgba(255,255,255,0.73);
 }
 
-@media (min-width:351px) and (max-width: 415px) {
+@media (min-width:351px) and (max-width: 430px) {
   .link {
     font-size: 18px;
     margin-bottom: 20px;
+    padding: 15px;
   }
 
   .suggest {
@@ -152,8 +153,8 @@
 
   .link img {
     bottom: 10px;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
   }
 
   .c-wan {
@@ -163,9 +164,8 @@
 
 @media (min-width: 306px) and (max-width: 350px) {
   .link {
-    font-size: 17px;
-    margin-bottom: 17px;
-    padding: 17px;
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 
   .suggest {
@@ -173,7 +173,7 @@
   }
 
   .link img {
-    bottom: 14px;
+    bottom: 7px;
     width: 28px;
     height: 28px;
   }
@@ -183,7 +183,7 @@
   }
 }
 
-@media (max-width: 305px) {
+@media (min-width: 261px) and (max-width: 305px) {
   .link {
     font-size: 13px;
     margin-bottom: 14px;
@@ -197,6 +197,27 @@
     bottom: 10px;
     width: 22px;
     height: 22px;
+  }
+
+  .c-wan {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 260px) {
+  .link {
+    font-size: 10px;
+    margin-bottom: 14px;
+  }
+
+  .suggest {
+    font-size: 8px;
+  }
+
+  .link img {
+    bottom: 9px;
+    width: 17px;
+    height: 17px;
   }
 
   .c-wan {
