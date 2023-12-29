@@ -19,10 +19,10 @@
       <div class="nameTitle">
         NPLAYER FOR ANDROID
       </div>
-      <div>
+      <div class="suggest-media">
         nPlayer adalah aplikasi media streaming <br>yang mendukung cloud service, anda bisa <br>menautkan google drive untuk menontonnya.
       </div>
-      <div class="suggest-title">
+      <div class="suggest-title suggest-media">
         Untuk mengunduhnya silahkan unduh <br>di Google Play Store Android
       </div>
     </div>
@@ -31,22 +31,22 @@
         <img class="banner-logo" src="image/google-play-banner.svg">
       </a>
     </div>
-    <div class="suggest-title2">
+    <div class="suggest-title2 suggest-media">
       (Berbayar)
     </div>
-    <div class="suggest-title3">
+    <div class="suggest-title3 suggest-media">
       Jika anda tidak ingin berbayar pada aplikasi tersebut <br>bisa mengunduhnya disini <br>Tanggung pengguna 
     </div>
     <div class="linkContainer">
       <a class="link" href="https://bit.ly/nplayer-download">
         <img src="image/icon-downloads.svg">
         <div>NPLAYER</div>
-        <div class="subtitle-name-apps">Mendukung <span class="text-bold2">cloud streaming</span></div>
+        <div class="subtitle-name-apps">Mendukung <span class="text-bold">cloud streaming</span></div>
       </a>
-      <div class="suggest-title4">
+      <div class="suggest-title4 suggest-media">
         (Free)
       </div>
-      <div class="suggest-title5">
+      <div class="suggest-title5 suggest-media">
         Lihat petunjuk <a href="docs/petunjuk-cloud-stream/android-nplayer-docs.html">selengkapnya</a>
       </div>
     </div>
@@ -55,29 +55,11 @@
       <a href="android-software.html" class="back-button">
         BACK
       </a>
-    </div>
+    </div suggest-media>
     <div class="telegram-contain">  
-      <div>Ikuti kami di <a href="https://t.me/wanencoded">telegram</a> untuk notifikasi film terbaru</div>
+      <div class="suggest-media">Ikuti kami di <a href="https://t.me/wanencoded">telegram</a> untuk notifikasi film terbaru</div>
       <div class="c-wan">&copy;2023 WAN&trade;</div>
     </div>
     <div class="line-footer"></div>
-
-    <script>
-      function copyText() {
-        const textToCopy = document.getElementById("textToCopy");
-
-        const textArea =document.createElement("textarea");
-        textArea.value = textToCopy.textContent
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textArea);
-
-        const copyButton = document.getElementById("copyButton");
-          copyButton.textContent = "Tersalin✔";
-
-          copyButton.classList.add("clicked");
-      }
-    </script>
   </body>
 </html>
