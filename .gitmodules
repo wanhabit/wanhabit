@@ -13,3 +13,6 @@
 [submodule "petunjuk-cloudstream"]
 	path = petunjuk-cloudstream
 	url = https://github.com/wanhabit/petunjuk-cloudstream.git
+[submodule "apps-software"]
+	path = apps-software
+	url = https://github.com/wanhabit/apps-software.git
