@@ -1,0 +1,3 @@
+[submodule "pemberitahuan"]
+	path = pemberitahuan
+	url = https://github.com/wanhabit/pemberitahuan.git
