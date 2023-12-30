@@ -10,3 +10,6 @@
 [submodule "petunjuk-mengunduh"]
 	path = petunjuk-mengunduh
 	url = https://github.com/wanhabit/petunjuk-mengunduh.git
+[submodule "petunjuk-cloudstream"]
+	path = petunjuk-cloudstream
+	url = https://github.com/wanhabit/petunjuk-cloudstream.git
