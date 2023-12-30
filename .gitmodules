@@ -4,3 +4,6 @@
 [submodule "movies-request"]
 	path = movies-request
 	url = https://github.com/wanhabit/movies-request.git
+[submodule "buy-account"]
+	path = buy-account
+	url = https://github.com/wanhabit/buy-account.git
