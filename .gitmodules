@@ -1,3 +1,6 @@
 [submodule "pemberitahuan"]
 	path = pemberitahuan
 	url = https://github.com/wanhabit/pemberitahuan.git
+[submodule "movies-request"]
+	path = movies-request
+	url = https://github.com/wanhabit/movies-request.git
