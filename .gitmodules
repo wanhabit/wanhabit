@@ -7,3 +7,6 @@
 [submodule "buy-account"]
 	path = buy-account
 	url = https://github.com/wanhabit/buy-account.git
+[submodule "petunjuk-mengunduh"]
+	path = petunjuk-mengunduh
+	url = https://github.com/wanhabit/petunjuk-mengunduh.git
