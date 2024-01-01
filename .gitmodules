@@ -19,3 +19,6 @@
 [submodule "get-canva"]
 	path = get-canva
 	url = https://github.com/wanhabit/get-canva.git
+[submodule "information"]
+	path = information
+	url = https://github.com/wanhabit/information.git
