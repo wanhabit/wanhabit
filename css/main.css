@@ -52,7 +52,7 @@
 .title-header {
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -66,6 +66,10 @@
   font-family: product-bold;
 }
 
+.suggest {
+  padding-bottom: 15px;
+}
+
 .linkContainer {
   width: auto;
   max-width: 620px;
@@ -74,7 +78,7 @@
   padding-right: 10px;
 }
 
-.shine {
+.shine{
   position: relative;
   overflow: hidden;
 }
@@ -140,6 +144,16 @@
   filter: brightness(50%)
 }
 
+.canva img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  filter: brightness(50%)
+}
+
 .telegram-contain {
   text-align: center;
   padding-top: 33px;
@@ -174,7 +188,8 @@
     padding: 15px;
   }
 
-  .suggest {
+  .suggest,
+  .suggest2 {
     font-size: 15px;
   }
 
@@ -182,6 +197,13 @@
     bottom: 9px;
     width: 32px;
     height: 32px;
+  }
+
+  .canva img {
+    width: 45px;
+    height: 45px;
+    bottom: 4px;
+    left: 9px;
   }
 
   .c-wan {
@@ -195,7 +217,8 @@
     margin-bottom: 20px;
   }
 
-  .suggest {
+  .suggest,
+  .suggest2 {
     font-size: 13px;
   }
 
@@ -203,6 +226,13 @@
     bottom: 7px;
     width: 28px;
     height: 28px;
+  }
+
+  .canva img {
+    width: 40px;
+    height: 40px;
+    bottom: 1px;
+    left: 8px;
   }
 
   .c-wan {
@@ -216,12 +246,13 @@
     margin-bottom: 14px;
   }
 
-  .suggest {
+  .suggest,
+  .suggest2 {
     font-size: 10px;
   }
 
   .link img {
-    bottom: 10px;
+    bottom: 9px;
     width: 22px;
     height: 22px;
   }
@@ -237,7 +268,8 @@
     margin-bottom: 14px;
   }
 
-  .suggest {
+  .suggest,
+  .suggest2 {
     font-size: 8px;
   }
 
