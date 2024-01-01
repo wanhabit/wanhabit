@@ -16,3 +16,6 @@
 [submodule "apps-software"]
 	path = apps-software
 	url = https://github.com/wanhabit/apps-software.git
+[submodule "get-canva"]
+	path = get-canva
+	url = https://github.com/wanhabit/get-canva.git
