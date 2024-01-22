@@ -67,7 +67,7 @@
 }
 
 .suggest {
-  padding-bottom: 26px;
+  padding-bottom: 21px;
 }
 
 .linkContainer {
@@ -211,7 +211,7 @@
   }
 }
 
-@media (min-width:397px) and (max-width: 422px) {
+@media (min-width:376px) and (max-width: 422px) {
   .link {
     font-size: 18px;
     margin-bottom: 20px;
@@ -221,36 +221,6 @@
   .suggest,
   .suggest2 {
     font-size: 14px;
-  }
-
-  .link img {
-    bottom: 9px;
-    width: 32px;
-    height: 32px;
-  }
-
-  .canva img {
-    width: 45px;
-    height: 45px;
-    bottom: 4px;
-    left: 9px;
-  }
-
-  .c-wan {
-    font-size: 9px;
-  }
-}
-
-@media (min-width:376px) and (max-width: 396px) {
-  .link {
-    font-size: 18px;
-    margin-bottom: 20px;
-    padding: 15px;
-  }
-
-  .suggest,
-  .suggest2 {
-    font-size: 13px;
   }
 
   .link img {
