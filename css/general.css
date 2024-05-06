@@ -28,11 +28,28 @@
   src: url(font/creato/CreatoDisplay-ExtraBold.otf)
 }
 
+@font-face {
+  font-family: graphik-regular;
+  src: url(font/graphik-family/Graphik-Regular-Trial.otf)
+}
+@font-face {
+  font-family: graphik-medium;
+  src: url(font/graphik-family/Graphik-Medium-Trial.otf)
+}
+@font-face {
+  font-family: graphik-bold;
+  src: url(font/graphik-family/Graphik-Bold-Trial.otf)
+}
+@font-face {
+  font-family: graphik-semibold;
+  src: url(font/graphik-family/Graphik-Semibold-Trial.otf)
+}
+
 body {
   background-color: #060606;
   color: #f5f5f5;
   margin: 0;
-  font-family: product-regular, Arial, Helvetica, sans-serif;
+  font-family: graphik-regular, product-regular, Arial, Helvetica, sans-serif;
   font-size: 18px;
   padding-top: 25px;
   padding-bottom: 25px;
