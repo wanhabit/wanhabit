@@ -33,6 +33,23 @@
   src: url(font/apple/SFNSDisplay-Regular.otf);
 }
 
+@font-face {
+  font-family: graphik-regular;
+  src: url(font/graphik-family/Graphik-Regular-Trial.otf)
+}
+@font-face {
+  font-family: graphik-medium;
+  src: url(font/graphik-family/Graphik-Medium-Trial.otf)
+}
+@font-face {
+  font-family: graphik-bold;
+  src: url(font/graphik-family/Graphik-Bold-Trial.otf)
+}
+@font-face {
+  font-family: graphik-semibold;
+  src: url(font/graphik-family/Graphik-Semibold-Trial.otf)
+}
+
 .logo-wanhabit {
   width: 120px;
   height: 120px;
@@ -63,7 +80,7 @@
 }
 
 .text-bold {
-  font-family: product-bold;
+  font-family: graphik-semibold;
 }
 
 .suggest {
@@ -115,7 +132,7 @@
   border: solid #f5f5f5 1px;
   border-radius: 10px;
   font-size: 25px;
-  font-family: apple-bold;
+  font-family: apple-bold, graphik-semibold;
   color: #101010;
   position: relative;
   transition: border-radius 0.15s,
@@ -154,10 +171,30 @@
   filter: brightness(50%)
 }
 
+.progres-contain {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 23px;
+}
+
+.progress-text {
+  margin-bottom: 30px;
+}
+
+.canva-frame {
+  width: 60%;
+  height: 400px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
 .telegram-contain {
   text-align: center;
-  padding-top: 33px;
+  padding-top: 150px;
 }
+
 
 .telegram-contain img {
   width: 80px;
@@ -169,7 +206,7 @@
 .c-wan {
   font-family: apple-regular;
   font-size: 13px;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 15px;
 }
 
@@ -183,9 +220,9 @@
 
 @media (min-width:423px) and (max-width: 480px) {
   .link {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 16px;
   }
 
   .suggest,
@@ -194,7 +231,7 @@
   }
 
   .link img {
-    bottom: 9px;
+    bottom: 11px;
     width: 32px;
     height: 32px;
   }
@@ -213,9 +250,9 @@
 
 @media (min-width:376px) and (max-width: 422px) {
   .link {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 16px;
   }
 
   .suggest,
@@ -224,7 +261,7 @@
   }
 
   .link img {
-    bottom: 9px;
+    bottom: 11px;
     width: 32px;
     height: 32px;
   }
@@ -234,6 +271,13 @@
     height: 45px;
     bottom: 4px;
     left: 9px;
+  }
+
+  .progress-text {
+    font-size: 20px;
+  }
+  .canva-frame {
+    width: 80%;
   }
 
   .c-wan {
