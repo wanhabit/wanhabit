@@ -69,7 +69,7 @@
 .title-header {
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -86,7 +86,7 @@
 .suggest {
   padding-bottom: 21px;
 }
-.suggest2 {
+.suggest3 {
   padding-bottom: 100px;
 }
 
