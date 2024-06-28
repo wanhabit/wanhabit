@@ -27,8 +27,18 @@
       <div class="suggest">
         Movie collection account<br>Layanan <span class="text-bold">Cloud Movies Collection</span> di GDrive<br>Original digital film dikodekan oleh WAN&trade; Encoded
       </div>
+      <div class="scroll-container">
+        <div class="suggest2 scroll">
+          <p class="text">
+            Solusi New box office movies rilis <span class="text-bold">lebih awal</span> untukmu - Special Price 50% OFF For Account Access Get Now!!
+          </p>
+          <div class="fade"></div>
+          <div class="fade2"></div>
+        </div>
+        
+      </div>
       <div class="suggest2">
-        <span class="text-bold">We update every latest movie!</span> <br>ikuti petunjuknya untuk menonton tanpa diunduh<br>Buy now! this is <span class="text-bold">lifetime account.</span>
+        <span class="text-bold">We update every latest movie!</span> <br>ikuti petunjuknya untuk menonton tanpa diunduh<br>Buy now! this is <span class="text-bold">lifetime access.</span>
       </div>
     </div>
     <div class="linkContainer">
@@ -85,10 +95,25 @@
       </a>   
       <div class="suggest">Ikuti kami di telegram <br>untuk <span class="text-bold">notifikasi</span> film terbaru</div>
       <div class="c-wan">
-        <div class="suggest2">Managed by PT WAN SEDARITA</div>
+        <div class="managed">
+          <div class="suggest2">Managed by</div>
+          <img src="image/wan.png" alt="WAN">
+        </div>    
         <div class="c-wan c-wan2">&copy;2024 WAN&trade;</div>
       </div>
     </div>
     <div class="line-footer"></div>
+    <script>
+      var style = document.createElement('style');
+      var position = 'right';
+
+      style.innerHTML = `
+      @keyframes my-animation{
+        0%{ ${position}: -${document.querySelector('.text').offsetWidth + 10}px;}
+        100%{${position}: 100%;}
+      }`;
+
+      document.head.append(style);
+    </script>
   </body>
 </html>

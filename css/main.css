@@ -213,8 +213,62 @@
   padding-top: 10px;
 }
 
+.managed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.managed img {
+  width: 55px;
+  height: 55px;
+  margin: 0;
+}
+
 .suggest2 {
   font-size: 18px;
+}
+
+.scroll-container {
+  width: auto;
+  max-width: 500px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+  background-color: #2F56B7;
+}
+
+.scroll .text {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: max-content;
+  animation: my-animation 15s linear infinite;
+}
+
+.fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 60%, #060606);
+}
+
+.fade2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 60%, #060606);
 }
 
 .line-footer {
@@ -250,6 +304,15 @@
     left: 9px;
   }
 
+  .managed img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .scroll {
+    height: 27px;
+  }
+
   .c-wan {
     font-size: 9px;
   }
@@ -267,6 +330,10 @@
     font-size: 14px;
   }
 
+  .scroll {
+    height: 26px;
+  }
+
   .link img {
     bottom: 13px;
     width: 32px;
@@ -278,6 +345,11 @@
     height: 45px;
     bottom: 4px;
     left: 9px;
+  }
+
+  .managed img {
+    width: 40px;
+    height: 40px;
   }
 
   .progress-text {
@@ -304,6 +376,10 @@
     font-size: 12px;
   }
 
+  .scroll {
+    height: 24px;
+  }
+
   .link img {
     bottom: 9px;
     width: 32px;
@@ -315,6 +391,11 @@
     height: 45px;
     bottom: 4px;
     left: 9px;
+  }
+
+  .managed img {
+    width: 36px;
+    height: 36px;
   }
 
   .c-wan {
@@ -333,6 +414,10 @@
     font-size: 11px;
   }
 
+  .scroll {
+    height: 23px;
+  }
+
   .link img {
     bottom: 7px;
     width: 28px;
@@ -344,6 +429,11 @@
     height: 40px;
     bottom: 1px;
     left: 8px;
+  }
+
+  .managed img {
+    width: 30px;
+    height: 30px;
   }
 
   .c-wan {
@@ -362,10 +452,19 @@
     font-size: 9px;
   }
 
+  .scroll {
+    height: 21px;
+  }
+
   .link img {
     bottom: 9px;
     width: 22px;
     height: 22px;
+  }
+
+  .managed img {
+    width: 25px;
+    height: 25px;
   }
 
   .c-wan {
@@ -384,11 +483,21 @@
     font-size: 8px;
   }
 
+  .scroll {
+    height: 20px;
+  }
+
   .link img {
     bottom: 9px;
     width: 17px;
     height: 17px;
   }
+
+  .managed img {
+    width: 20px;
+    height: 20px;
+  }
+
 
   .c-wan {
     font-size: 9px;
