@@ -195,6 +195,10 @@
   padding-top: 150px;
 }
 
+.progres-contain img {
+  height: 280px;
+}
+
 .telegram-contain img {
   width: 80px;
   height: 80px;
