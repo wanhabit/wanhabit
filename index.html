@@ -98,7 +98,7 @@
           <div class="suggest2">Managed by</div>
           <img src="image/me.PNG" alt="WAN">
         </div>    
-        <div class="c-wan c-wan2">&copy;2024 WAN&trade;</div>
+        <div class="c-wan c-wan2">&copy;<span class="current-year"></span> WAN&trade;</div>
       </div>
     </div>
     <div class="line-footer"></div>
@@ -113,6 +113,15 @@
       }`;
 
       document.head.append(style);
+
+      document.addEventListener("DOMContentLoaded", function() {
+        const yearElements = document.querySelectorAll('.current-year');
+        const currentYear = new Date().getFullYear();
+        yearElements.forEach(function(element) {
+        element.textContent = currentYear;
+        });
+      });
+
     </script>
   </body>
 </html>
