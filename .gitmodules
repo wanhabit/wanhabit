@@ -22,3 +22,9 @@
 [submodule "information"]
 	path = information
 	url = https://github.com/wanhabit/information.git
+[submodule "movies-notification"]
+	path = movies-notification
+	url = https://github.com/wanhabit/movies-notification.git
+[submodule "doc"]
+	path = doc
+	url = https://github.com/wanhabit/doc.git
