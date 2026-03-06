@@ -2,10 +2,12 @@
   font-family: product-bold;
   src: url(font/product-sans/ProductSans-Bold.woff2)
 }
+
 @font-face {
   font-family: product-medium;
   src: url(font/product-sans/ProductSans-Medium.woff2)
 }
+
 @font-face {
   font-family: product-regular;
   src: url(font/product-sans/ProductSans-Regular.woff2)
@@ -15,14 +17,17 @@
   font-family: creato-regular;
   src: url(font/creato/CreatoDisplay-Regular.otf)
 }
+
 @font-face {
   font-family: creato-medium;
   src: url(font/creato/CreatoDisplay-Medium.otf)
 }
+
 @font-face {
   font-family: creato-bold;
   src: url(font/creato/CreatoDisplay-Bold.otf)
 }
+
 @font-face {
   font-family: creato-extrabold;
   src: url(font/creato/CreatoDisplay-ExtraBold.otf)
@@ -32,14 +37,17 @@
   font-family: graphik-regular;
   src: url(font/graphik-family/Graphik-Regular-Trial.otf)
 }
+
 @font-face {
   font-family: graphik-medium;
   src: url(font/graphik-family/Graphik-Medium-Trial.otf)
 }
+
 @font-face {
   font-family: graphik-bold;
   src: url(font/graphik-family/Graphik-Bold-Trial.otf)
 }
+
 @font-face {
   font-family: graphik-semibold;
   src: url(font/graphik-family/Graphik-Semibold-Trial.otf)
