@@ -260,8 +260,8 @@
 /* NEW BLURAY Section */
 .bluray-section {
   text-align: center;
-  padding: 60px 16px 20px;
-  max-width: 620px;
+  padding: 60px 30px 20px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -285,6 +285,12 @@
   gap: 12px;
 }
 
+@media (min-width: 481px) {
+  .poster-grid {
+    gap: 18px;
+  }
+}
+
 .poster-card {
   display: flex;
   flex-direction: column;
@@ -303,9 +309,8 @@
 
 .poster-card img {
   width: 100%;
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
-  background-color: #111;
+  object-fit: contain;
+  background-color: #000;
   display: block;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
