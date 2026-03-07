@@ -7,6 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Jelajahi cloud koleksi film wanhabit yang luas dari klasik hingga yang paling baru! Dapatkan sekarang dan ikuti petuntuknya.">
+  <meta name="keywords"
+    content="WAN-DB, google drive movie collection, cloud movies, high quality movies, 1080p, 4K, Blu-ray, Stremio, streaming, home cinema, movie database">
+  <meta property="og:title" content="WAN™ - Cloud Movies Collection GDrive">
+  <meta property="og:description"
+    content="Jelajahi cloud koleksi film wanhabit yang luas dari klasik hingga yang paling baru! Dapatkan sekarang dan ikuti petuntuknya.">
+  <meta property="og:image" content="https://wanhabit.com/image/og-image.png">
+  <meta property="og:url" content="https://wanhabit.com">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="image/favicon/favicon.ico">
@@ -132,21 +140,49 @@
         element.textContent = currentYear;
       });
 
-      // Fetch NEW BLURAY posters from Apps Script
-      const BLURAY_API = 'https://script.google.com/macros/s/AKfycbzQTGfFqpY8fjPWULp0WatzawRZogIFS_HhmTPCNw0lTovFYd1q7aM-Bx-m8TtpWeV5LA/exec'; // Ganti dengan URL Web App setelah deploy
+      // Fetch NEW BLURAY posters — Cloudflare KV (instant) with Apps Script fallback
+      var BLURAY_API = 'https://cache.wanhabit.com/';
+      var BLURAY_FALLBACK = 'https://script.google.com/macros/s/AKfycbzQTGfFqpY8fjPWULp0WatzawRZogIFS_HhmTPCNw0lTovFYd1q7aM-Bx-m8TtpWeV5LA/exec';
+      var CACHE_KEY = 'bluray_posters';
+
+      function renderBluray(items) {
+        var grid = document.getElementById('bluray-grid');
+        grid.innerHTML = '';
+        items.forEach(function (item, index) {
+          var card = document.createElement('div');
+          card.className = index === 0 ? 'poster-card latest' : 'poster-card';
+          card.innerHTML = '<img src="' + item.poster + '" alt="' + item.title + ' (' + item.year + ')" loading="lazy">' +
+            '<div class="poster-title">' + item.title + ' (' + item.year + ')</div>';
+          grid.appendChild(card);
+        });
+        document.getElementById('bluray-section').style.display = 'block';
+      }
+
+      // 1. Show localStorage cache instantly
+      try {
+        var cached = localStorage.getItem(CACHE_KEY);
+        if (cached) {
+          var cachedItems = JSON.parse(cached);
+          if (cachedItems.length > 0) renderBluray(cachedItems);
+        }
+      } catch (e) { }
+
+      // 2. Fetch from Cloudflare KV (instant), fallback to Apps Script
       fetch(BLURAY_API)
         .then(function (res) { return res.json(); })
         .then(function (data) {
           if (data.items && data.items.length > 0) {
-            var grid = document.getElementById('bluray-grid');
-            data.items.forEach(function (item) {
-              var card = document.createElement('div');
-              card.className = 'poster-card';
-              card.innerHTML = '<img src="' + item.poster + '" alt="' + item.title + ' (' + item.year + ')" loading="lazy">' +
-                '<div class="poster-title">' + item.title + ' (' + item.year + ')</div>';
-              grid.appendChild(card);
-            });
-            document.getElementById('bluray-section').style.display = 'block';
+            localStorage.setItem(CACHE_KEY, JSON.stringify(data.items));
+            renderBluray(data.items);
+          } else {
+            return fetch(BLURAY_FALLBACK)
+              .then(function (res) { return res.json(); })
+              .then(function (fbData) {
+                if (fbData.items && fbData.items.length > 0) {
+                  localStorage.setItem(CACHE_KEY, JSON.stringify(fbData.items));
+                  renderBluray(fbData.items);
+                }
+              });
           }
         })
         .catch(function (err) { console.log('Bluray fetch error:', err); });
