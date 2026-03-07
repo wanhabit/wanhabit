@@ -89,6 +89,11 @@
       <div>DOCUMENTATION</div>
     </a>
   </div>
+  <div class="bluray-section" id="bluray-section" style="display: none;">
+    <div class="bluray-title">NEW BLURAY RILIS</div>
+    <div class="bluray-subtitle">Koleksi Blu-Ray terbaru di database</div>
+    <div class="poster-grid" id="bluray-grid"></div>
+  </div>
   <div class="progres-contain">
     <div class="progress-text"><span class="text-bold">IMDB</span> TOP 250 MOVIES <br>PROGRESS IS SUCCESSFULLY..
     </div>
@@ -126,6 +131,25 @@
       yearElements.forEach(function (element) {
         element.textContent = currentYear;
       });
+
+      // Fetch NEW BLURAY posters from Apps Script
+      const BLURAY_API = 'https://script.google.com/macros/s/AKfycbzQTGfFqpY8fjPWULp0WatzawRZogIFS_HhmTPCNw0lTovFYd1q7aM-Bx-m8TtpWeV5LA/exec'; // Ganti dengan URL Web App setelah deploy
+      fetch(BLURAY_API)
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data.items && data.items.length > 0) {
+            var grid = document.getElementById('bluray-grid');
+            data.items.forEach(function (item) {
+              var card = document.createElement('div');
+              card.className = 'poster-card';
+              card.innerHTML = '<img src="' + item.poster + '" alt="' + item.title + ' (' + item.year + ')" loading="lazy">' +
+                '<div class="poster-title">' + item.title + ' (' + item.year + ')</div>';
+              grid.appendChild(card);
+            });
+            document.getElementById('bluray-section').style.display = 'block';
+          }
+        })
+        .catch(function (err) { console.log('Bluray fetch error:', err); });
     });
 
   </script>
