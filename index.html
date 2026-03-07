@@ -158,6 +158,12 @@
         document.getElementById('bluray-section').style.display = 'block';
       }
 
+      // Debug: clear cache with ?reset=1
+      if (window.location.search.includes('reset=1')) {
+        localStorage.removeItem(CACHE_KEY);
+        console.log('Bluray cache cleared!');
+      }
+
       // 1. Show localStorage cache instantly
       try {
         var cached = localStorage.getItem(CACHE_KEY);
