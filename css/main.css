@@ -328,6 +328,18 @@
   justify-content: center;
 }
 
+/* Latest poster animation */
+.poster-card.latest {
+  animation: floatPoster 3s ease-in-out infinite;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+}
+
+@keyframes floatPoster {
+  0%, 100% { transform: translateY(0); box-shadow: 0 0 15px rgba(255, 255, 255, 0.08); }
+  50% { transform: translateY(-10px); box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5); }
+}
+
 .footer-desc {
   font-size: 14px;
   line-height: 1.7;
